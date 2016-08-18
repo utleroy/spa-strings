@@ -8,8 +8,8 @@
 </head>
 
 <body>
-  <form action="">
-    <input type="text" name="enter" placeholder="enter stuff" pattern="[a-z]" id="input" title="should only contain letters.">
+  <form action="" class="notValid">
+    <input type="text" name="enter" placeholder="enter stuff" pattern="[a-z]{1,15}" id="input" title="should only contain letters." class="wrong">
     <button id="submit">Submit</button>
   </form>
 

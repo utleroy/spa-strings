@@ -1,13 +1,18 @@
 var output = document.getElementById("output");
 var input = document.getElementById("input");
 var button = document.getElementById("submit");
+var form = document.getElementById("form");
 var userInput = "";
 
 
-  button.addEventListener("invalid", function(event){
+
+
+
+  input.addEventListener("invalid", function(event){
+    var message = document.getElementsByAttributeName("title");
     event.preventDefault();
     if ( ! event.target.validity.valid ) {
-      userInput = event.setCustomValidity("dflkjashdfkjsa");
+      userInput = event.target.setCustomValidity(message)
     }
 });
 

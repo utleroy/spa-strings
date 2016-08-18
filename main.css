@@ -6,3 +6,6 @@ input:valid {
     border-color: #ccc;
 }
 
+.notValid {
+  content: "wrong format";
+}
