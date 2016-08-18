@@ -1,7 +1,8 @@
+input:invalid {
+    border-color: red;
+}
+input,
 input:valid {
-  display: block;
+    border-color: #ccc;
 }
 
-input:invalid {
-  display: none
-}

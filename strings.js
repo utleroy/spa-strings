@@ -3,15 +3,13 @@ var input = document.getElementById("input");
 var button = document.getElementById("submit");
 var userInput = "";
 
-button.addEventListener("click", checkLetters)
 
-  function checkLetters() {
-    if (input.validity.valid && input.value !== "") {
-    userInput = input.value
-// }
-}
-    console.log("button clicked. The user typed: ")
-}
+  button.addEventListener("invalid", function(event){
+    event.preventDefault();
+    if ( ! event.target.validity.valid ) {
+      userInput = event.setCustomValidity("dflkjashdfkjsa");
+    }
+});
 
 
   // function reversal() {
