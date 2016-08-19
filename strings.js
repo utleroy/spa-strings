@@ -4,21 +4,20 @@ var button = document.getElementById("submit");
 var form = document.getElementById("form");
 var userInput = "";
 
-
-
-
-
   input.addEventListener("invalid", function(event){
-    var message = document.getElementsByAttributeName("title");
+    console.log(userInput)
     event.preventDefault();
-    if ( ! event.target.validity.valid ) {
-      userInput = event.target.setCustomValidity(message)
+    if ( input.validity.valid && input.value !== "" ) {
+      userInput = event.target
+      // reversal(userInput);
     }
 });
 
 
-  // function reversal() {
+  // function reversal(userRev) {
 
+  //   userRev.split("").reverse();
+  //   console.log(reversed)
   // }
 
   // function alphabits() {
