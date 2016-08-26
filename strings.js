@@ -2,23 +2,21 @@ var output = document.getElementById("output");
 var input = document.getElementById("input");
 var button = document.getElementById("submit");
 var form = document.getElementById("form");
+var input = document.getElementById("input")
 var userInput = "";
 
   input.addEventListener("invalid", function(event){
-    console.log(userInput)
     event.preventDefault();
     if ( input.validity.valid && input.value !== "" ) {
-      userInput = event.target
-      // reversal(userInput);
+      userInput = event.target.value
+console.log(userInput)
     }
+
 });
 
-
-  // function reversal(userRev) {
-
-  //   userRev.split("").reverse();
-  //   console.log(reversed)
-  // }
+  function reversal(userRev) {
+    userInput.split("").reverse();
+  }
 
   // function alphabits() {
 
