@@ -6,16 +6,17 @@ var input = document.getElementById("input")
 var userInput = "";
 
   input.addEventListener("invalid", function(event){
-    event.preventDefault();
+    // event.preventDefault();
     if ( input.validity.valid && input.value !== "" ) {
-      userInput = event.target.value
-console.log(userInput)
+      userInput = input.value
+
     }
+console.log(userInput)
 
 });
 
   function reversal(userRev) {
-    userInput.split("").reverse();
+
   }
 
   // function alphabits() {
